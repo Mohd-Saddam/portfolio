@@ -14,6 +14,7 @@ export class NavbarComponent {
   isDarkTheme = this.themeService.isDarkTheme;
 
   // Mobile drawer state
+  /** Whether the mobile navigation drawer is open */
   mobileMenuOpen = false;
 
   toggleMenu(): void {
@@ -28,3 +29,10 @@ export class NavbarComponent {
     this.themeService.toggleTheme();
   }
 }
+
+/**
+ * NavbarComponent
+ * - toggleMenu opens the mobile drawer on small devices
+ * - closeMenu closes the drawer
+ * - toggleTheme delegates to ThemeService to switch themes
+ */

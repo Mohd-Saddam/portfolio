@@ -1,7 +1,14 @@
+<!--
+  Navbar Component
+  - Top navigation used for in-page links to About / Skills / Experience / Projects
+  - Includes theme toggle, mobile hamburger and mobile drawer for small screens
+-->
 <nav class="navbar">
   <div class="container">
     <a href="#" class="logo">&lt;/&gt;</a>
+    <!-- Navigation links & theme toggle -->
     <div class="nav-links">
+      <!-- About link scrolls to the #about section -->
       <a href="#about">
         <!-- User icon -->
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" aria-hidden="true">
@@ -10,10 +17,12 @@
         </svg>
         About
       </a>
+      <!-- Skills link scrolls to the #skills section -->
       <a href="#skills">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 16v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-4"/><path d="M7 11l5-5 5 5"/></svg>
         Skills
       </a>
+      <!-- Experience link scrolls to the #experience section -->
       <a href="#experience">
         <!-- Briefcase icon -->
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" aria-hidden="true">
@@ -38,6 +47,7 @@
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6"/><path d="M2 7l10 6 10-6"/></svg>
         Contact
       </a>
+      <!-- Theme toggle: switches between dark and light mode -->
       <button class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="isDarkTheme() ? 'Switch to light mode' : 'Switch to dark mode'">
         @if (isDarkTheme()) {
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
@@ -50,13 +60,13 @@
         }
       </button>
       <!-- download CV removed as per user request -->
-      <!-- Mobile hamburger (visible on small screens) -->
+      <!-- Mobile hamburger trigger -> opens the drawer on small screens -->
       <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle navigation">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
 
-    <!-- Mobile Drawer overlay -->
+    <!-- Mobile Drawer overlay: displayed when hamburger clicked -->
     <div class="mobile-drawer" [class.open]="mobileMenuOpen" (click)="closeMenu()">
       <div class="drawer-content" (click)="$event.stopPropagation()">
         <button class="drawer-close" (click)="closeMenu()" aria-label="Close menu">

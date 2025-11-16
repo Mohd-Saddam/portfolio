@@ -1,3 +1,9 @@
+<!--
+  Projects Section
+  - Purpose: display production projects and sample work.
+  - Projects are grouped into categories for clarity.
+  - Each project card contains optional image, description, technology badges and links.
+-->
 <section class="projects-section" id="projects">
   <div class="container">
     <div class="section-header" appScrollAnimation animationType="fade-up">
@@ -5,9 +11,10 @@
       <p>Some of the noteworthy projects I have built</p>
     </div>
     
-    <!-- Production Projects -->
+    <!-- Production Projects: those deployed or used in real-world scenarios -->
     <div class="projects-category">
       <h3 class="category-title">Production Projects</h3>
+      <!-- Grid of project cards for production projects -->
       <div class="projects-grid">
         @for (project of productionProjects; track project.id) {
           <div class="project-card">
@@ -32,9 +39,10 @@
       </div>
     </div>
 
-    <!-- Sample Work -->
+    <!-- Sample Work: demo or experimental projects to show concept/proof-of-work -->
     <div class="projects-category">
       <h3 class="category-title">Sample Work</h3>
+      <!-- Grid of project cards for sample or side projects -->
       <div class="projects-grid">
         @for (project of sampleProjects; track project.id) {
           <div class="project-card">

@@ -10,5 +10,6 @@ import { ScrollAnimationDirective } from '../../directives/scroll-animation.dire
   styleUrl: './education.component.scss'
 })
 export class EducationComponent {
+  /** The educational background to display, ordered by date if available. */
   @Input() education: Education[] = [];
 }

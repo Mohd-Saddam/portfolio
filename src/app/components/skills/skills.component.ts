@@ -10,6 +10,15 @@ import { ScrollAnimationDirective } from '../../directives/scroll-animation.dire
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  /**
+   * Flat array of skills - may be used for a simple list view.
+   * Example fields: name, icon, level
+   */
   @Input() skills: Skill[] = [];
+
+  /**
+   * Skill items grouped in categories. Each category has a category name
+   * and an array of Skill entries.
+   */
   @Input() skillItems: SkillCategory[] = [];
 }

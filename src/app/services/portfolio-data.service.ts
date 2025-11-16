@@ -48,7 +48,9 @@ export class PortfolioDataService {
         email: 'email@example.com',
         phone: '',
         location: '',
-        summary: 'Portfolio summary goes here.'
+        summary: 'Portfolio summary goes here.',
+        about: [],
+        quickFacts: []
       },
       experiences: [],
       education: [],

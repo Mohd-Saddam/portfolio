@@ -10,6 +10,14 @@ import { ScrollAnimationDirective } from '../../directives/scroll-animation.dire
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+  /**
+   * Projects that are production-ready, often with live links.
+   * Expect Project.id, Project.name, Project.description, Project.technologies, etc.
+   */
   @Input() productionProjects: Project[] = [];
+
+  /**
+   * Sample or demo projects to show experiments or prototypes.
+   */
   @Input() sampleProjects: Project[] = [];
 }

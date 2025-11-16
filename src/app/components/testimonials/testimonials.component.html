@@ -1,3 +1,9 @@
+<!--
+  Testimonials Section
+  - Purpose: carousel of client and colleague testimonials.
+  - Includes carousel controls (prev / next), slide track and indicators.
+  - Responsive: itemsPerView is updated in the component based on window width.
+-->
 <section id="testimonials" class="testimonials">
   <div class="container">
     <div class="section-header" appScrollAnimation animationType="fade-up">
@@ -5,6 +11,7 @@
       <p>What clients and colleagues say</p>
     </div>
 
+    <!-- Carousel wrapper: controls and track for visible testimonials -->
     <div class="testimonials-carousel">
       <button 
         class="carousel-btn prev" 
@@ -16,6 +23,7 @@
         </svg>
       </button>
 
+      <!-- Track wrapper: contains the list of testimonials and allows pause-on-hover -->
       <div class="testimonials-wrapper" (mouseenter)="pauseAutoScroll()" (mouseleave)="resumeAutoScroll()" (pointerdown)="pauseAutoScroll()" (pointerup)="resumeAutoScroll()">
         <div class="testimonials-track">
           @for (testimonial of getVisibleTestimonials(); track testimonial.id) {
@@ -37,6 +45,7 @@
       </button>
     </div>
 
+    <!-- Carousel indicators for navigation to specific windows of testimonials -->
     <div class="carousel-indicators">
       @for (item of testimonials; track item.id; let i = $index) {
         @if (i <= testimonials.length - itemsPerView) {

@@ -1,3 +1,9 @@
+<!--
+  Skills Section
+  - Purpose: Group skills into categories (e.g., Frontend, Backend, Tools).
+  - Each category renders a grid of skill items with icon and name.
+  - Uses id #skills for navigation.
+-->
 <section class="skills-section" id="skills">
   <div class="container">
     <div class="section-header" appScrollAnimation animationType="fade-up">
@@ -5,10 +11,13 @@
       <p>The skills, tools and technologies I am really good at</p>
     </div>
     
+    <!-- Skills container iterates across skill categories -->
     <div class="skills-container">
       @for (category of skillItems; track category.category) {
+        <!-- One skill category (title + grid) -->
         <div class="skill-category">
           <h3 class="category-title">{{ category.category }}</h3>
+          <!-- Grid of skill items inside the current category -->
           <div class="skills-grid">
             @for (skill of category.skills; track skill.name) {
               <div class="skill-item">

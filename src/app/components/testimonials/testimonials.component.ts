@@ -9,6 +9,11 @@ import { ScrollAnimationDirective } from '../../directives/scroll-animation.dire
   templateUrl: './testimonials.component.html',
   styleUrl: './testimonials.component.scss'
 })
+/**
+ * Testimonials Component
+ * - Renders a horizontally scrollable carousel of testimonials (images + text)
+ * - Handles responsive itemsPerView and auto-scrolling behavior
+ */
 export class TestimonialsComponent implements OnInit, OnDestroy {
   @Input() testimonials: Testimonial[] = [];
   
@@ -31,6 +36,7 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
     window.removeEventListener('resize', this.resizeHandler);
   }
 
+  /** Start automatic scrolling of testimonials every 5 seconds. */
   private startAutoScroll(): void {
     // Auto-scroll every 5 seconds
     if (this.intervalId) return;
@@ -49,14 +55,17 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
   }
 
   // Public helpers to allow template to pause/resume scrolling
+  /** Temporarily stop the auto-scroll (used on hover or pointer down). */
   pauseAutoScroll(): void {
     this.stopAutoScroll();
   }
 
+  /** Resume the automatic carousel scrolling (starts interval again). */
   resumeAutoScroll(): void {
     this.startAutoScroll();
   }
 
+  /** Move the carousel one window forward and update currentIndex. */
   next(): void {
     const n = this.testimonials.length;
     if (n > this.itemsPerView) {
@@ -67,6 +76,7 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
     }
   }
 
+  /** Move the carousel one window backward and update currentIndex. */
   prev(): void {
     const n = this.testimonials.length;
     if (n > this.itemsPerView) {
@@ -77,6 +87,10 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
     }
   }
 
+  /**
+   * Get the testimonials currently visible in the carousel's viewport
+   * based on the current index and the responsive itemsPerView value.
+   */
   getVisibleTestimonials(): Testimonial[] {
     const n = this.testimonials.length;
     if (n <= this.itemsPerView) return this.testimonials;
@@ -87,6 +101,10 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
     return this.testimonials.slice(start, start + this.itemsPerView);
   }
 
+  /**
+   * Update the itemsPerView value based on window width.
+   * - mobile: 1, tablet/smaller desktop: 2, large screens: 3
+   */
   private updateItemsPerView(): void {
     const width = window.innerWidth;
     if (width <= 768) {

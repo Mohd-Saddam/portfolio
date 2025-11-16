@@ -10,5 +10,6 @@ import { PersonalInfo } from '../../models/portfolio.model';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+  /** The main personal info used in the hero banner: name, summary, avatar etc. */
   @Input() personalInfo?: PersonalInfo;
 }

@@ -9,6 +9,16 @@ export interface PersonalInfo {
   website?: string;
   summary: string;
   avatar?: string;
+  /**
+   * Simple list of short facts about the person to render in the About section.
+   * Example: ["B.E. in Computer Engineering", "Avid learner"]
+   */
+  quickFacts?: string[];
+  /**
+   * Array of paragraph strings used in the About section.
+   * When present, AboutComponent will render these paragraphs in order.
+   */
+  about?: string[];
 }
 
 export interface Experience {

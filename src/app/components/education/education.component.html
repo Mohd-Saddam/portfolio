@@ -1,3 +1,8 @@
+<!--
+  Education Section
+  - Purpose: Show academic credentials and institutions
+  - Layout: cards with degree, institution, and date range
+-->
 <section class="education-section" id="education">
   <div class="container">
     <div class="section-header" appScrollAnimation animationType="fade-up">
@@ -5,6 +10,7 @@
       <p>My educational background</p>
     </div>
     
+    <!-- Iterates through education items and renders a card for each -->
     <div class="education-list">
       @for (edu of education; track edu.id) {
         <div class="education-card">

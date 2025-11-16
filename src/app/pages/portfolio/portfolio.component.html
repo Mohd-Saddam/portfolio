@@ -1,8 +1,15 @@
+<!--
+  Portfolio Page
+  - Purpose: compose the full-page using multiple components (Navbar, Hero, About, Skills, Experience, Education, Projects, Testimonials, Contact)
+  - The page fetches portfolioData$ (async pipe) and injects to each child component
+-->
 <div class="portfolio-page">
   @if (portfolioData$ | async; as data) {
     <app-navbar></app-navbar>
+    <!-- Main content container that stacks sections in order -->
     <main>
       <app-hero [personalInfo]="data.personalInfo"></app-hero>
+      <!-- Section separators visually break between major page blocks -->
       <div class="section-separator"></div>
       <app-about [personalInfo]="data.personalInfo"></app-about>
       <div class="section-separator"></div>
@@ -19,6 +26,7 @@
       <div class="section-separator"></div>
       <app-testimonials [testimonials]="data.testimonials"></app-testimonials>
       <div class="section-separator"></div>
+      <!-- Contact component at the bottom to invite the visitor to connect -->
       <app-contact 
         [personalInfo]="data.personalInfo" 
         [socialLinks]="data.socialLinks">
@@ -26,7 +34,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <p class="copyright">© {{ currentYear }} | Designed and coded with ❤️ by {{ data.personalInfo.name.split(' ')[0] }}</p>
+        <p class="copyright">© {{ currentYear }} | Designed and coded with ❤️ by Akash</p>
       </div>
     </footer>
   } @else {

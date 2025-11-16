@@ -10,5 +10,6 @@ import { ScrollAnimationDirective } from '../../directives/scroll-animation.dire
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
+  /** List of experience entries to be rendered in the experience section */
   @Input() experiences: Experience[] = [];
 }
