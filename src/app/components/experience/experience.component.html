@@ -22,7 +22,10 @@
           </div>
           
           <div class="experience-details">
-            <h3 class="position">{{ exp.position }}</h3>
+            <div class="experience-header">
+              <h3 class="company">{{ exp.company }}</h3>
+              <h4 class="position">{{ exp.position }}</h4>
+            </div>
             <ul class="responsibilities">
               @for (resp of exp.responsibilities; track $index) {
                 <li>{{ resp }}</li>

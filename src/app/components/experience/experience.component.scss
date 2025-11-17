@@ -96,14 +96,24 @@
     }
 
     .experience-details {
-      .position {
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        color: var(--text-light);
+      .experience-header {
+        .company {
+          font-size: 1.25rem;
+          font-weight: 700;
+          margin-bottom: 0.25rem;
+          color: var(--text);
+        }
 
-        :host-context(body.dark) & {
-          color: var(--text-dark);
+        .position {
+          font-size: 1rem;
+          font-weight: 600;
+          margin: 0 0 1rem 0;
+          color: var(--text-secondary);
+        }
+
+        :host-context(body.dark) {
+          .company { color: var(--text-dark); }
+          .position { color: var(--text-dark-secondary); }
         }
       }
 

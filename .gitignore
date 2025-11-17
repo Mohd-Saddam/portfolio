@@ -41,6 +41,3 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
-
-# Ignore portfolio JSON data (user-provided content)
-/src/assets/data/portfolio-data.json
