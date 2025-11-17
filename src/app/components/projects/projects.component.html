@@ -18,9 +18,10 @@
       <div class="projects-grid">
         @for (project of productionProjects; track project.id) {
           <div class="project-card">
-            @if (project.imageUrl) {
+            <!-- Project images: if project provides multiple images (imageUrls) they will rotate every second -->
+            @if (project.imageUrls && project.imageUrls.length) {
               <div class="project-image">
-                <img [src]="project.imageUrl" [alt]="project.name" />
+                <img [src]="getProjectImage(project)" [alt]="project.name" />
               </div>
             }
             
@@ -46,9 +47,10 @@
       <div class="projects-grid">
         @for (project of sampleProjects; track project.id) {
           <div class="project-card">
-            @if (project.imageUrl) {
+            <!-- Project images: supports multiple rotating images via 'imageUrls' -->
+            @if (project.imageUrls && project.imageUrls.length) {
               <div class="project-image">
-                <img [src]="project.imageUrl" [alt]="project.name" />
+                <img [src]="getProjectImage(project)" [alt]="project.name" />
               </div>
             }
             

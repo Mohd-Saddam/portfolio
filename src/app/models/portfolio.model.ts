@@ -65,7 +65,11 @@ export interface Project {
   name: string;
   description: string;
   technologies: string[];
-  imageUrl?: string;
+  /**
+   * Optional list of images for a project.
+   * If present and has more than one image, the UI will cycle through these images every second.
+   */
+  imageUrls?: string[];
   githubUrl?: string;
   liveUrl?: string;
   highlights: string[];

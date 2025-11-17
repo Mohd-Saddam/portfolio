@@ -248,28 +248,37 @@
       "name": "Enterprise CRM System",
       "description": "A comprehensive customer relationship management system for large enterprises with advanced analytics, lead tracking, and sales pipeline management.",
       "technologies": ["Angular", "Node.js", "PostgreSQL", "Redis", "AWS"],
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop"
+      ]
     },
     {
       "id": "prod2",
       "name": "Healthcare Management Portal",
       "description": "HIPAA-compliant healthcare management platform with patient records, appointment scheduling, and telemedicine capabilities.",
       "technologies": ["React", "Express", "MongoDB", "Socket.io", "Azure"],
-      "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop"
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop"
+      ]
     },
     {
       "id": "prod3",
       "name": "Financial Trading Platform",
       "description": "Real-time stock trading platform with live market data, portfolio management, and advanced charting tools for institutional investors.",
       "technologies": ["Next.js", "NestJS", "TimescaleDB", "WebSocket", "Docker"],
-      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop"
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop"
+      ]
     },
     {
       "id": "prod4",
       "name": "E-Learning Management System",
       "description": "Comprehensive learning management system with video streaming, interactive quizzes, progress tracking, and certification management.",
       "technologies": ["Vue.js", "Django", "PostgreSQL", "AWS S3", "CloudFront"],
-      "imageUrl": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop"
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop"
+      ]
     }
   ],
   "sampleProjects": [
@@ -278,7 +287,10 @@
       "name": "E-Commerce Platform",
       "description": "A full-featured e-commerce platform with product management, cart functionality, and payment integration.",
       "technologies": ["Angular", "Node.js", "MongoDB", "Stripe API", "AWS S3"],
-      "imageUrl": "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=400&fit=crop"
+      ],
       "githubUrl": "https://github.com/johndoe/ecommerce-platform",
       "liveUrl": "https://ecommerce-demo.johndoe.dev"
     },
@@ -287,7 +299,9 @@
       "name": "Task Management System",
       "description": "A collaborative task management application with real-time updates and team collaboration features.",
       "technologies": ["React", "Express", "Socket.io", "PostgreSQL", "Docker"],
-      "imageUrl": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop"
+      ],
       "githubUrl": "https://github.com/johndoe/task-manager",
       "liveUrl": null
     },
@@ -296,7 +310,10 @@
       "name": "Weather Dashboard",
       "description": "An interactive weather dashboard that displays current weather and forecasts for multiple locations.",
       "technologies": ["Vue.js", "OpenWeather API", "Chart.js", "Tailwind CSS"],
-      "imageUrl": "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop",
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1505765052569-4d2fff2a0b33?w=600&h=400&fit=crop"
+      ],
       "githubUrl": "https://github.com/johndoe/weather-dashboard",
       "liveUrl": "https://weather.johndoe.dev"
     }
@@ -327,7 +344,7 @@
       "name": "LinkedIn Recommendation 5",
       "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=800&fit=crop"
     },
-     {
+    {
       "id": "test6",
       "name": "LinkedIn Recommendation 6",
       "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop"
