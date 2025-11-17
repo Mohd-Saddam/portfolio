@@ -7,6 +7,8 @@ export interface PersonalInfo {
   linkedin?: string;
   github?: string;
   website?: string;
+  /** Availability or short status to show in the hero section, e.g. "Available for new projects" */
+  availability?: string;
   summary: string;
   avatar?: string;
   /** Alternate avatar image, prefer this for About section when available. */
