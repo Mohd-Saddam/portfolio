@@ -23,6 +23,11 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
   private intervalId?: number;
   private resizeHandler = () => this.updateItemsPerView();
   private mediaQuery?: MediaQueryList;
+  
+  // Touch gesture support
+  private touchStartX = 0;
+  private touchEndX = 0;
+  private minSwipeDistance = 50;
 
   constructor(private cdr: ChangeDetectorRef) {}
 
@@ -143,5 +148,35 @@ export class TestimonialsComponent implements OnInit, OnDestroy {
     // This prevents the temporary state where the CSS is responsive but the component still
     // renders an outdated number of items until the next user/action triggers change detection.
     this.cdr.detectChanges();
+  }
+
+  /** Handle touch start event for swipe gesture */
+  onTouchStart(event: TouchEvent): void {
+    this.touchStartX = event.changedTouches[0].screenX;
+    this.pauseAutoScroll();
+  }
+
+  /** Handle touch move event for swipe gesture */
+  onTouchMove(event: TouchEvent): void {
+    this.touchEndX = event.changedTouches[0].screenX;
+  }
+
+  /** Handle touch end event and detect swipe direction */
+  onTouchEnd(): void {
+    const swipeDistance = this.touchStartX - this.touchEndX;
+    
+    if (Math.abs(swipeDistance) > this.minSwipeDistance) {
+      if (swipeDistance > 0) {
+        // Swiped left, go to next
+        this.next();
+      } else {
+        // Swiped right, go to previous
+        this.prev();
+      }
+    }
+    
+    this.resumeAutoScroll();
+    this.touchStartX = 0;
+    this.touchEndX = 0;
   }
 }

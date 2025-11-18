@@ -24,7 +24,12 @@
       </button>
 
       <!-- Track wrapper: contains the list of testimonials and allows pause-on-hover -->
-      <div class="testimonials-wrapper" (mouseenter)="pauseAutoScroll()" (mouseleave)="resumeAutoScroll()" (pointerdown)="pauseAutoScroll()" (pointerup)="resumeAutoScroll()">
+      <div class="testimonials-wrapper" 
+        (mouseenter)="pauseAutoScroll()" 
+        (mouseleave)="resumeAutoScroll()" 
+        (touchstart)="onTouchStart($event)"
+        (touchmove)="onTouchMove($event)"
+        (touchend)="onTouchEnd()">
         <div class="testimonials-track">
           @for (testimonial of getVisibleTestimonials(); track testimonial.id) {
             <div class="testimonial-card">
