@@ -12,8 +12,11 @@
       <!-- Primary hero content: greeting + summary + quick info -->
       <div class="hero-content">
         <h1 class="hero-title">
-          Hi, I'm {{ personalInfo.name.split(' ')[0] }} 👋
+          Hi, I'm {{ personalInfo.name }} 👋
         </h1>
+        <p class="hero-subtitle">
+          {{ personalInfo.title }}
+        </p>
         <p class="hero-description">
           {{ personalInfo.summary }}
         </p>
