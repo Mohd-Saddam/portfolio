@@ -1,0 +1,311 @@
+{
+  "personalInfo": {
+    "name": "Your Name",
+    "title": "Python Backend Developer",
+    "email": "your.email@example.com",
+    "phone": "+1234567890",
+    "location": "Your City, Your Country",
+    "linkedin": "https://www.linkedin.com/in/yourprofile/",
+    "github": "https://github.com/yourusername",
+    "website": "https://github.com/yourusername",
+    "availability": "Available for new opportunities",
+    "summary": "Python Backend Developer with 5+ years of experience in building scalable APIs using FastAPI, Django Rest Framework, and Flask. Strong in Python, SQL/NoSQL/MongoDB, and backend architecture with a focus on clean, efficient, and reliable code. Experience with Microservices, AWS, Azure, and ElasticSearch.",
+    "avatar": "https://ui-avatars.com/api/?name=Your+Name&size=200&background=667eea&color=fff&bold=true",
+    "avatar2": "https://ui-avatars.com/api/?name=YN&size=200&background=764ba2&color=fff&bold=true",
+    "about": [
+      "I'm a passionate Python Backend Developer specializing in building scalable, high-performance APIs and microservices. With 5+ years of professional experience, I excel in developing robust backend solutions using FastAPI, Django Rest Framework, Flask, and modern cloud technologies.",
+      "I began my journey as a software engineer, and since then, I've continued to grow and evolve, taking on challenging projects across various domains. I have hands-on experience with PostgreSQL, MongoDB, ElasticSearch, Redis, Docker, AWS, Azure Functions, and implementing microservices architecture.",
+      "I am a progressive thinker who enjoys working on complex backend systems end to end, from requirement analysis and architecture design to implementation, optimization, and deployment.",
+      "When I'm not in full-on developer mode, you can find me exploring new technologies, contributing to open-source projects, learning Data Science & Machine Learning, or solving Data Structures and Algorithms problems."
+    ],
+    "quickFacts": [
+      "MCA in Computer Science",
+      "5+ years of Python Backend Development",
+      "Currently learning Data Science & Machine Learning",
+      "Expert in FastAPI, Django, Flask",
+      "Strong in Microservices & Cloud Technologies",
+      "Passionate about clean code and optimization"
+    ]
+  },
+  "experiences": [
+    {
+      "id": "exp1",
+      "company": "Tech Company",
+      "position": "Python Backend Developer",
+      "location": "City, Country",
+      "startDate": "2024-02",
+      "endDate": "Present",
+      "current": true,
+      "responsibilities": [
+        "Developed API for logistics domain using Python and FastAPI",
+        "Optimized SQL queries reducing API latency by 40%",
+        "Participated in backend architecture decisions",
+        "Conducted requirement analysis and documentation",
+        "Built reusable Python modules and utility functions"
+      ],
+      "technologies": ["Python 3.11", "FastAPI", "Flask", "Docker", "ElasticSearch", "PostgreSQL", "MongoDB", "GitHub", "OOP", "REST APIs"]
+    },
+    {
+      "id": "exp2",
+      "company": "Freelance",
+      "position": "Python Developer",
+      "location": "Remote",
+      "startDate": "2023-06",
+      "endDate": "2023-12",
+      "current": false,
+      "responsibilities": [
+        "Created and tuned Elasticsearch queries achieving 90% increase in search response times",
+        "Developed microservice API using Django Rest Framework",
+        "Implemented real-time searching across diverse datasets",
+        "Implemented index mapping and settings to optimize search performance"
+      ],
+      "technologies": ["Python 3.11", "Django Rest Framework", "ElasticSearch", "Kafka", "MySQL", "Redis", "Docker", "Microservices", "GitHub", "CI/CD Jenkins", "AWS"]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu1",
+      "institution": "Online Learning Platform",
+      "degree": "Data Science & Machine Learning",
+      "field": "Data Science & Machine Learning",
+      "location": "Online",
+      "startDate": "2025-09",
+      "endDate": "Present",
+      "gpa": "",
+      "achievements": [
+        "Currently pursuing advanced Data Science and ML concepts",
+        "Learning statistical modeling, deep learning, and ML algorithms"
+      ]
+    },
+    {
+      "id": "edu2",
+      "institution": "Your University",
+      "degree": "Master of Computer Applications (MCA)",
+      "field": "Computer Science",
+      "location": "City, Country",
+      "startDate": "2012-07",
+      "endDate": "2015-06",
+      "gpa": "",
+      "achievements": [
+        "Specialized in Computer Science and Applications",
+        "Strong foundation in programming and software development"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Backend & Architecture",
+      "items": ["Python", "Clean Architecture", "Microservices", "REST APIs"]
+    },
+    {
+      "category": "Programming Languages",
+      "items": ["Python", "SQL", "NoSQL"]
+    },
+    {
+      "category": "Backend Frameworks",
+      "items": ["FastAPI", "Django Rest Framework", "Flask", "REST APIs", "Microservices"]
+    },
+    {
+      "category": "Databases",
+      "items": ["PostgreSQL", "PostGIS", "MySQL", "MongoDB", "Redis", "NoSQL", "ElasticSearch"]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": ["AWS", "Azure Functions", "Docker", "CI/CD", "Jenkins", "Terraform", "Linux"]
+    },
+    {
+      "category": "Tools & Technologies",
+      "items": ["Git", "GitHub", "GitLab", "Kafka", "Celery", "SQLAlchemy", "Swagger", "Postman"]
+    },
+    {
+      "category": "Integrations & APIs",
+      "items": ["Dialogflow", "WhatsApp", "Slack", "Telegram", "Firebase"]
+    },
+    {
+      "category": "Concepts & Practices",
+      "items": ["OOP", "Data Structures & Algorithms", "Microservices Architecture", "Agile/Scrum", "Code Optimization", "Unit Testing"]
+    }
+  ],
+  "skillItems": [
+    {
+      "category": "Backend & Architecture",
+      "skills": [
+        {
+          "name": "Python",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        },
+        {
+          "name": "Microservices",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+        },
+        {
+          "name": "REST APIs",
+          "icon": "https://www.vectorlogo.zone/logos/json/json-icon.svg"
+        }
+      ]
+    },
+    {
+      "category": "Backend Frameworks",
+      "skills": [
+        {
+          "name": "FastAPI",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+        },
+        {
+          "name": "Django Rest Framework",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+        },
+        {
+          "name": "Flask",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Databases",
+      "skills": [
+        {
+          "name": "PostgreSQL",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+        },
+        {
+          "name": "MySQL",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        },
+        {
+          "name": "Redis",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+        },
+        {
+          "name": "ElasticSearch",
+          "icon": "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg"
+        }
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "skills": [
+        {
+          "name": "AWS",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+        },
+        {
+          "name": "Azure",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+        },
+        {
+          "name": "Docker",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+        },
+        {
+          "name": "Git",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+        },
+        {
+          "name": "GitHub",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        },
+        {
+          "name": "GitLab",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+        },
+        {
+          "name": "Jenkins",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+        },
+        {
+          "name": "Linux",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Tools & Technologies",
+      "skills": [
+        {
+          "name": "Kafka",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg"
+        },
+        {
+          "name": "Terraform",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
+        },
+        {
+          "name": "PyCharm",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg"
+        },
+        {
+          "name": "Visual Studio Code",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+        },
+        {
+          "name": "Google Colab",
+          "icon": "https://colab.research.google.com/img/colab_favicon_256px.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+        },
+        {
+          "name": "Swagger",
+          "icon": "https://icon.icepanel.io/Technology/svg/Swagger.svg"
+        }
+      ]
+    }
+  ],
+  "productionProjects": [
+    {
+      "id": "prod1",
+      "name": "Sample Project 1",
+      "description": "A sample backend API project showcasing FastAPI and PostgreSQL integration with authentication and CRUD operations.",
+      "technologies": ["Python 3.11", "FastAPI", "PostgreSQL", "Docker", "GitHub"],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=600&h=400&fit=crop"
+      ]
+    },
+    {
+      "id": "prod2",
+      "name": "Sample Project 2",
+      "description": "Microservice architecture demonstration using Django Rest Framework with Elasticsearch integration.",
+      "technologies": ["Python", "Django Rest Framework", "ElasticSearch", "Redis", "Docker"],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop"
+      ]
+    }
+  ],
+  "sampleProjects": [],
+  "testimonials": [
+    {
+      "id": "test1",
+      "name": "John Doe",
+      "imageUrl": "https://ui-avatars.com/api/?name=John+Doe&size=200&background=6366f1&color=fff&bold=true",
+      "position": "CTO",
+      "company": "Tech Company",
+      "text": "Sample testimonial text here. This developer demonstrates excellent technical skills and professionalism.",
+      "sourceUrl": "https://www.linkedin.com",
+      "sourceText": "Read on LinkedIn",
+      "date": "November 2025"
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/yourprofile/",
+      "icon": "linkedin"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/yourusername",
+      "icon": "github"
+    },
+    {
+      "platform": "Email",
+      "url": "mailto:your.email@example.com",
+      "icon": "email"
+    }
+  ]
+}
