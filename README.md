@@ -94,11 +94,17 @@ npm install -g @angular/cli@latest
    ```
 
 3. **Run the development server**
-   ```bash
-   npm start
-   # or
-   ng serve
-   ```
+  ```bash
+  # Before starting, copy the sample data file to the working JSON file
+  # PowerShell (Windows):
+  #   Copy-Item -Path src\assets\data\portfolio-data-sample.json -Destination src\assets\data\portfolio-data.json -Force
+  # macOS / Linux:
+  #   cp src/assets/data/portfolio-data-sample.json src/assets/data/portfolio-data.json
+
+  npm start
+  # or
+  ng serve
+  ```
 
 4. **Open your browser**
    Navigate to `http://localhost:4200/`
