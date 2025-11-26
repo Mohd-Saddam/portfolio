@@ -4,12 +4,15 @@
   display: flex;
   align-items: center;
   position: relative;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 50%, transparent 100%);
   
   // Hexagon pattern with gradient fade
-  background-image: url("data:image/svg+xml,%3Csvg width='50' height='43' viewBox='0 0 50 43' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23007bff' stroke-opacity='0.08' stroke-width='1'%3E%3Cpath d='M25 1l12.5 7.22v14.44L25 30.17 12.5 22.66V8.22L25 1z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: 
+    linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 50%, transparent 100%),
+    url("data:image/svg+xml,%3Csvg width='50' height='43' viewBox='0 0 50 43' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23007bff' stroke-opacity='0.08' stroke-width='1'%3E%3Cpath d='M25 1l12.5 7.22v14.44L25 30.17 12.5 22.66V8.22L25 1z'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat;
   
-  // Gradient overlay (bottom-left visible to top-right hidden)
+  // Animated gradient overlay
   &::before {
     content: '';
     position: absolute;
@@ -17,17 +20,32 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top right, transparent 30%, var(--background-light) 70%);
+    background: radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
+    animation: gradientShift 15s ease infinite;
     
     :host-context(body.dark) & {
-      background: linear-gradient(to top right, transparent 30%, var(--background-dark) 70%);
+      background: radial-gradient(circle at 20% 50%, rgba(96, 165, 250, 0.15) 0%, transparent 50%);
     }
   }
   
   :host-context(body.dark) & {
-    background-image: url("data:image/svg+xml,%3Csvg width='50' height='43' viewBox='0 0 50 43' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%2360a5fa' stroke-opacity='0.1' stroke-width='1'%3E%3Cpath d='M25 1l12.5 7.22v14.44L25 30.17 12.5 22.66V8.22L25 1z'/%3E%3C/g%3E%3C/svg%3E");
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.08) 0%, rgba(59, 130, 246, 0.08) 50%, transparent 100%);
+    background-image: 
+      linear-gradient(135deg, rgba(96, 165, 250, 0.08) 0%, rgba(59, 130, 246, 0.08) 50%, transparent 100%),
+      url("data:image/svg+xml,%3Csvg width='50' height='43' viewBox='0 0 50 43' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%2360a5fa' stroke-opacity='0.1' stroke-width='1'%3E%3Cpath d='M25 1l12.5 7.22v14.44L25 30.17 12.5 22.66V8.22L25 1z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  @keyframes gradientShift {
+    0%, 100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 0.8;
+      transform: translateX(20px);
+    }
   }
 
   .container {
@@ -118,28 +136,48 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid var(--border-light);
+        border: 2px solid transparent;
+        background: linear-gradient(var(--card-light), var(--card-light)) padding-box,
+                    linear-gradient(135deg, #667eea, #764ba2) border-box;
         border-radius: 8px;
         color: var(--text-light);
-        transition: all 0.2s ease;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, #667eea, #764ba2);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
 
         &:hover {
-          background: var(--card-light);
-          transform: translateY(-2px);
+          transform: translateY(-4px) scale(1.05);
+          box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+
+          &::before {
+            opacity: 0.1;
+          }
         }
 
         :host-context(body.dark) & {
-          border-color: var(--border-dark);
+          background: linear-gradient(var(--card-dark), var(--card-dark)) padding-box,
+                      linear-gradient(135deg, #60a5fa, #3b82f6) border-box;
           color: var(--text-dark);
 
           &:hover {
-            background: var(--card-dark);
+            box-shadow: 0 8px 16px rgba(96, 165, 250, 0.3);
           }
         }
 
         svg {
           width: 20px;
           height: 20px;
+          position: relative;
+          z-index: 1;
         }
       }
     }
@@ -154,18 +192,48 @@
       width: 280px;
       height: 320px;
 
+      &::before {
+        content: '';
+        position: absolute;
+        inset: -4px;
+        background: linear-gradient(135deg, #667eea, #764ba2, #667eea);
+        border-radius: 16px;
+        z-index: -1;
+        background-size: 200% 200%;
+        animation: gradientRotate 3s ease infinite;
+      }
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 12px;
-        border: 8px solid var(--border-light);
-        transition: border-color 0.3s ease;
+        border: 4px solid var(--card-light);
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
 
         :host-context(body.dark) & {
-          border-color: var(--border-dark);
+          border-color: var(--card-dark);
+          
+          &:hover {
+            box-shadow: 0 15px 40px rgba(96, 165, 250, 0.4);
+          }
         }
       }
+    }
+  }
+
+  @keyframes gradientRotate {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
     }
   }
 
