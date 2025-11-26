@@ -1,168 +1,180 @@
 {
   "personalInfo": {
-    "name": "Your Name",
-    "title": "Python Backend Developer",
-    "email": "your.email@example.com",
-    "phone": "+1234567890",
-    "location": "Your City, Your Country",
-    "linkedin": "https://www.linkedin.com/in/yourprofile/",
-    "github": "https://github.com/yourusername",
-    "website": "https://github.com/yourusername",
-    "availability": "Available for new opportunities",
-    "summary": "Python Backend Developer with 5+ years of experience in building scalable APIs using FastAPI, Django Rest Framework, and Flask. Strong in Python, SQL/NoSQL/MongoDB, and backend architecture with a focus on clean, efficient, and reliable code. Experience with Microservices, AWS, Azure, and ElasticSearch.",
-    "avatar": "https://ui-avatars.com/api/?name=Your+Name&size=200&background=667eea&color=fff&bold=true",
-    "avatar2": "https://ui-avatars.com/api/?name=YN&size=200&background=764ba2&color=fff&bold=true",
+    "name": "John Doe",
+    "title": "Full Stack Developer",
+    "email": "john.doe@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "website": "https://johndoe.dev",
+    "availability": "Available for new projects",
+    "summary": "Passionate Full Stack Developer with 5+ years of experience building scalable web applications. Specialized in Angular, React, Node.js, and cloud technologies. Strong problem-solver with a track record of delivering high-quality solutions.",
+    "avatar": "https://ui-avatars.com/api/?name=John+Doe&size=200&background=667eea&color=fff&bold=true"
+    ,
+    "avatar2": "https://ui-avatars.com/api/?name=Tohn+Doe&size=200&background=667eea&color=fff&bold=true"
+    ,
     "about": [
-      "I'm a passionate Python Backend Developer specializing in building scalable, high-performance APIs and microservices. With 5+ years of professional experience, I excel in developing robust backend solutions using FastAPI, Django Rest Framework, Flask, and modern cloud technologies.",
-      "I began my journey as a software engineer, and since then, I've continued to grow and evolve, taking on challenging projects across various domains. I have hands-on experience with PostgreSQL, MongoDB, ElasticSearch, Redis, Docker, AWS, Azure Functions, and implementing microservices architecture.",
-      "I am a progressive thinker who enjoys working on complex backend systems end to end, from requirement analysis and architecture design to implementation, optimization, and deployment.",
-      "When I'm not in full-on developer mode, you can find me exploring new technologies, contributing to open-source projects, learning Data Science & Machine Learning, or solving Data Structures and Algorithms problems."
-    ],
+      "I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.",
+      "I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.",
+      "I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.",
+      "When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub."
+    ]
+    ,
     "quickFacts": [
-      "MCA in Computer Science",
-      "5+ years of Python Backend Development",
-      "Currently learning Data Science & Machine Learning",
-      "Expert in FastAPI, Django, Flask",
-      "Strong in Microservices & Cloud Technologies",
-      "Passionate about clean code and optimization"
+      "B.E. in Computer Engineering",
+      "Avid learner",
+      "Full time freelancer",
+      "Aspiring indie hacker",
+      "Agility really rocks"
     ]
   },
   "experiences": [
     {
       "id": "exp1",
-      "company": "Tech Company",
-      "position": "Python Backend Developer",
-      "location": "City, Country",
-      "startDate": "2024-02",
+      "company": "Tech Corp",
+      "position": "Senior Full Stack Developer",
+      "location": "San Francisco, CA",
+      "startDate": "2022-01",
       "endDate": "Present",
       "current": true,
       "responsibilities": [
-        "Developed API for logistics domain using Python and FastAPI",
-        "Optimized SQL queries reducing API latency by 40%",
-        "Participated in backend architecture decisions",
-        "Conducted requirement analysis and documentation",
-        "Built reusable Python modules and utility functions"
+        "Lead development of enterprise web applications using Angular and Node.js",
+        "Architect and implement microservices architecture",
+        "Mentor junior developers and conduct code reviews",
+        "Collaborate with product team to define technical requirements"
       ],
-      "technologies": ["Python 3.11", "FastAPI", "Flask", "Docker", "ElasticSearch", "PostgreSQL", "MongoDB", "GitHub", "OOP", "REST APIs"]
+      "technologies": ["Angular", "Node.js", "TypeScript", "MongoDB", "AWS"]
     },
     {
       "id": "exp2",
-      "company": "Freelance",
-      "position": "Python Developer",
-      "location": "Remote",
-      "startDate": "2023-06",
-      "endDate": "2023-12",
+      "company": "Digital Solutions Inc",
+      "position": "Full Stack Developer",
+      "location": "San Francisco, CA",
+      "startDate": "2020-03",
+      "endDate": "2021-12",
       "current": false,
       "responsibilities": [
-        "Created and tuned Elasticsearch queries achieving 90% increase in search response times",
-        "Developed microservice API using Django Rest Framework",
-        "Implemented real-time searching across diverse datasets",
-        "Implemented index mapping and settings to optimize search performance"
+        "Developed responsive web applications using React and Express",
+        "Implemented RESTful APIs and integrated third-party services",
+        "Optimized application performance and reduced load times by 40%",
+        "Participated in agile development processes"
       ],
-      "technologies": ["Python 3.11", "Django Rest Framework", "ElasticSearch", "Kafka", "MySQL", "Redis", "Docker", "Microservices", "GitHub", "CI/CD Jenkins", "AWS"]
+      "technologies": ["React", "Express", "PostgreSQL", "Docker", "Redis"]
+    },
+    {
+      "id": "exp3",
+      "company": "StartupXYZ",
+      "position": "Junior Developer",
+      "location": "San Francisco, CA",
+      "startDate": "2019-06",
+      "endDate": "2020-02",
+      "current": false,
+      "responsibilities": [
+        "Built front-end features using Vue.js and Bootstrap",
+        "Maintained and enhanced existing codebase",
+        "Collaborated with design team to implement UI/UX improvements",
+        "Fixed bugs and implemented feature requests"
+      ],
+      "technologies": ["Vue.js", "JavaScript", "Bootstrap", "MySQL"]
     }
   ],
   "education": [
     {
       "id": "edu1",
-      "institution": "Online Learning Platform",
-      "degree": "Data Science & Machine Learning",
-      "field": "Data Science & Machine Learning",
-      "location": "Online",
-      "startDate": "2025-09",
-      "endDate": "Present",
-      "gpa": "",
-      "achievements": [
-        "Currently pursuing advanced Data Science and ML concepts",
-        "Learning statistical modeling, deep learning, and ML algorithms"
-      ]
-    },
-    {
-      "id": "edu2",
-      "institution": "Your University",
-      "degree": "Master of Computer Applications (MCA)",
+      "institution": "University of California",
+      "degree": "Bachelor of Science",
       "field": "Computer Science",
-      "location": "City, Country",
-      "startDate": "2012-07",
-      "endDate": "2015-06",
-      "gpa": "",
+      "location": "Berkeley, CA",
+      "startDate": "2015-09",
+      "endDate": "2019-05",
+      "gpa": "3.8",
       "achievements": [
-        "Specialized in Computer Science and Applications",
-        "Strong foundation in programming and software development"
+        "Dean's List all semesters",
+        "Graduated with Honors",
+        "President of Computer Science Club"
       ]
     }
   ],
   "skills": [
     {
-      "category": "Backend & Architecture",
-      "items": ["Python", "Clean Architecture", "Microservices", "REST APIs"]
+      "category": "Frontend",
+      "items": ["Angular", "React", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Tailwind CSS", "Bootstrap"]
     },
     {
-      "category": "Programming Languages",
-      "items": ["Python", "SQL", "NoSQL"]
+      "category": "Backend",
+      "items": ["Node.js", "Express", "NestJS", "Python", "Django", "RESTful APIs", "GraphQL"]
     },
     {
-      "category": "Backend Frameworks",
-      "items": ["FastAPI", "Django Rest Framework", "Flask", "REST APIs", "Microservices"]
+      "category": "Database",
+      "items": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
     },
     {
-      "category": "Databases",
-      "items": ["PostgreSQL", "PostGIS", "MySQL", "MongoDB", "Redis", "NoSQL", "ElasticSearch"]
+      "category": "DevOps & Tools",
+      "items": ["Git", "Docker", "AWS", "CI/CD", "Jenkins", "Kubernetes", "Linux"]
     },
     {
-      "category": "Cloud & DevOps",
-      "items": ["AWS", "Azure Functions", "Docker", "CI/CD", "Jenkins", "Terraform", "Linux"]
-    },
-    {
-      "category": "Tools & Technologies",
-      "items": ["Git", "GitHub", "GitLab", "Kafka", "Celery", "SQLAlchemy", "Swagger", "Postman"]
-    },
-    {
-      "category": "Integrations & APIs",
-      "items": ["Dialogflow", "WhatsApp", "Slack", "Telegram", "Firebase"]
-    },
-    {
-      "category": "Concepts & Practices",
-      "items": ["OOP", "Data Structures & Algorithms", "Microservices Architecture", "Agile/Scrum", "Code Optimization", "Unit Testing"]
+      "category": "Other",
+      "items": ["Agile/Scrum", "Unit Testing", "Jest", "Jasmine", "Problem Solving", "Team Leadership"]
     }
   ],
   "skillItems": [
     {
-      "category": "Backend & Architecture",
+      "category": "Frontend",
       "skills": [
+        {
+          "name": "JavaScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "React",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "Next.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+        },
+        {
+          "name": "Angular",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "skills": [
+        {
+          "name": "Node.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "name": "Express.js",
+          "icon": "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+        },
+        {
+          "name": "Nest.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
+        },
         {
           "name": "Python",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
         },
         {
-          "name": "Microservices",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
-        },
-        {
-          "name": "REST APIs",
-          "icon": "https://www.vectorlogo.zone/logos/json/json-icon.svg"
-        }
-      ]
-    },
-    {
-      "category": "Backend Frameworks",
-      "skills": [
-        {
-          "name": "FastAPI",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
-        },
-        {
-          "name": "Django Rest Framework",
+          "name": "Django",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-        },
-        {
-          "name": "Flask",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
         }
       ]
     },
     {
-      "category": "Databases",
+      "category": "Database",
       "skills": [
         {
           "name": "PostgreSQL",
@@ -179,80 +191,56 @@
         {
           "name": "Redis",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
-        },
-        {
-          "name": "ElasticSearch",
-          "icon": "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg"
         }
       ]
     },
     {
-      "category": "Cloud & DevOps",
+      "category": "DevOps & Tools",
       "skills": [
         {
-          "name": "AWS",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-        },
-        {
-          "name": "Azure",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+          "name": "Git",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
         },
         {
           "name": "Docker",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
         },
         {
-          "name": "Git",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+          "name": "AWS",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
         },
         {
-          "name": "GitHub",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-        },
-        {
-          "name": "GitLab",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
-        },
-        {
-          "name": "Jenkins",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
-        },
-        {
-          "name": "Linux",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+          "name": "Kubernetes",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
         }
       ]
     },
     {
-      "category": "Tools & Technologies",
+      "category": "Other",
       "skills": [
         {
-          "name": "Kafka",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg"
+          "name": "Sass/Scss",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
         },
         {
-          "name": "Terraform",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
+          "name": "Tailwindcss",
+          "icon": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
         },
         {
-          "name": "PyCharm",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg"
+          "name": "Figma",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
         },
         {
-          "name": "Visual Studio Code",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+          "name": "Socket.io",
+          "icon": "https://www.vectorlogo.zone/logos/socketio/socketio-icon.svg"
         },
         {
-          "name": "Google Colab",
-          "icon": "https://colab.research.google.com/img/colab_favicon_256px.png"
+          "name": "Cypress",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg"
         },
         {
-          "name": "Postman",
-          "icon": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-        },
-        {
-          "name": "Swagger",
-          "icon": "https://icon.icepanel.io/Technology/svg/Swagger.svg"
+          "name": "Storybook",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg"
         }
       ]
     }
@@ -260,51 +248,178 @@
   "productionProjects": [
     {
       "id": "prod1",
-      "name": "Sample Project 1",
-      "description": "A sample backend API project showcasing FastAPI and PostgreSQL integration with authentication and CRUD operations.",
-      "technologies": ["Python 3.11", "FastAPI", "PostgreSQL", "Docker", "GitHub"],
+      "name": "Enterprise CRM System",
+      "description": "A comprehensive customer relationship management system for large enterprises with advanced analytics, lead tracking, and sales pipeline management.",
+      "technologies": ["Angular", "Node.js", "PostgreSQL", "Redis", "AWS"],
       "imageUrls": [
-        "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=600&h=400&fit=crop"
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop"
       ]
     },
     {
       "id": "prod2",
-      "name": "Sample Project 2",
-      "description": "Microservice architecture demonstration using Django Rest Framework with Elasticsearch integration.",
-      "technologies": ["Python", "Django Rest Framework", "ElasticSearch", "Redis", "Docker"],
+      "name": "Healthcare Management Portal",
+      "description": "HIPAA-compliant healthcare management platform with patient records, appointment scheduling, and telemedicine capabilities.",
+      "technologies": ["React", "Express", "MongoDB", "Socket.io", "Azure"],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop"
+      ]
+    },
+    {
+      "id": "prod3",
+      "name": "Financial Trading Platform",
+      "description": "Real-time stock trading platform with live market data, portfolio management, and advanced charting tools for institutional investors.",
+      "technologies": ["Next.js", "NestJS", "TimescaleDB", "WebSocket", "Docker"],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop"
+      ]
+    },
+    {
+      "id": "prod4",
+      "name": "E-Learning Management System",
+      "description": "Comprehensive learning management system with video streaming, interactive quizzes, progress tracking, and certification management.",
+      "technologies": ["Vue.js", "Django", "PostgreSQL", "AWS S3", "CloudFront"],
       "imageUrls": [
         "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop"
       ]
     }
   ],
-  "sampleProjects": [],
+  "sampleProjects": [
+    {
+      "id": "proj1",
+      "name": "E-Commerce Platform",
+      "description": "A full-featured e-commerce platform with product management, cart functionality, and payment integration.",
+      "technologies": ["Angular", "Node.js", "MongoDB", "Stripe API", "AWS S3"],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=400&fit=crop"
+      ],
+      "githubUrl": "https://github.com/johndoe/ecommerce-platform",
+      "liveUrl": "https://ecommerce-demo.johndoe.dev"
+    },
+    {
+      "id": "proj2",
+      "name": "Task Management System",
+      "description": "A collaborative task management application with real-time updates and team collaboration features.",
+      "technologies": ["React", "Express", "Socket.io", "PostgreSQL", "Docker"],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop"
+      ],
+      "githubUrl": "https://github.com/johndoe/task-manager",
+      "liveUrl": null
+    },
+    {
+      "id": "proj3",
+      "name": "Weather Dashboard",
+      "description": "An interactive weather dashboard that displays current weather and forecasts for multiple locations.",
+      "technologies": ["Vue.js", "OpenWeather API", "Chart.js", "Tailwind CSS"],
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1505765052569-4d2fff2a0b33?w=600&h=400&fit=crop"
+      ],
+      "githubUrl": "https://github.com/johndoe/weather-dashboard",
+      "liveUrl": "https://weather.johndoe.dev"
+    }
+  ],
   "testimonials": [
     {
       "id": "test1",
-      "name": "John Doe",
-      "imageUrl": "https://ui-avatars.com/api/?name=John+Doe&size=200&background=6366f1&color=fff&bold=true",
+      "name": "Jane Smith",
+      "imageUrl": "https://ui-avatars.com/api/?name=Jane+Smith&size=200&background=667eea&color=fff&bold=true",
+      "position": "Product Manager",
+      "company": "Acme Co",
+      "text": "John consistently delivered high-quality work; his attention to detail and communication skills ensured our project launched on time. ",
+      "sourceUrl": "https://www.linkedin.com/recommendation/test1"
+      ,
+      "sourceText": "Read on LinkedIn"
+      ,
+      "date": "January 29, 2021"
+    },
+    {
+      "id": "test2",
+      "name": "Sam Patel",
+      "imageUrl": "https://ui-avatars.com/api/?name=Sam+Patel&size=200&background=5555ff&color=fff&bold=true",
       "position": "CTO",
-      "company": "Tech Company",
-      "text": "Sample testimonial text here. This developer demonstrates excellent technical skills and professionalism.",
-      "sourceUrl": "https://www.linkedin.com",
-      "sourceText": "Read on LinkedIn",
-      "date": "November 2025"
+      "company": "TechCorp",
+      "text": "An excellent engineer who took ownership of our critical features and worked well with cross-functional teams.",
+      "sourceUrl": "https://www.linkedin.com/recommendation/test2"
+      ,
+      "sourceText": "Read on LinkedIn"
+      ,
+      "date": "February 12, 2022"
+    },
+    {
+      "id": "test3",
+      "name": "Lisa Chen",
+      "imageUrl": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&h=800&fit=crop",
+      "position": "Design Lead",
+      "company": "Bright Designs",
+      "text": "John's design-synced engineering made integrations easier and improved our release velocity.",
+      "sourceUrl": "https://www.linkedin.com/recommendation/test3"
+      ,
+      "sourceText": "Read on LinkedIn"
+      ,
+      "date": "March 5, 2022"
+    },
+    {
+      "id": "test4",
+      "name": "Carlos Diaz",
+      "imageUrl": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=600&h=800&fit=crop",
+      "position": "Founder",
+      "company": "StartupHub",
+      "text": "Delivered real results during our growth phase — strong problem-solving and great collaboration.",
+      "sourceUrl": "https://www.linkedin.com/recommendation/test4"
+      ,
+      "sourceText": "Read on LinkedIn"
+      ,
+      "date": "May 14, 2020"
+    },
+    {
+      "id": "test5",
+      "name": "Eun-ji Park",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=800&fit=crop",
+      "position": "Engineering Manager",
+      "company": "Scale Labs",
+      "text": "Great to work with — always delivered pragmatic, well-tested solutions.",
+      "sourceUrl": "https://www.linkedin.com/recommendation/test5"
+      ,
+      "sourceText": "Read on LinkedIn"
+      ,
+      "date": "June 10, 2019"
+    },
+    {
+      "id": "test6",
+      "name": "Marcus Lee",
+      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop",
+      "position": "Product Owner",
+      "company": "Retailly",
+      "text": "Quick to iterate and adapt — an effective collaborator in dynamic environments.",
+      "sourceUrl": "https://www.linkedin.com/recommendation/test6"
+      ,
+      "sourceText": "Read on LinkedIn"
+      ,
+      "date": "August 2, 2021"
     }
-  ],
+    ],
   "socialLinks": [
     {
       "platform": "LinkedIn",
-      "url": "https://www.linkedin.com/in/yourprofile/",
+      "url": "https://linkedin.com/in/johndoe",
       "icon": "linkedin"
     },
     {
       "platform": "GitHub",
-      "url": "https://github.com/yourusername",
+      "url": "https://github.com/johndoe",
       "icon": "github"
     },
     {
+      "platform": "Twitter",
+      "url": "https://twitter.com/johndoe",
+      "icon": "twitter"
+    },
+    {
       "platform": "Email",
-      "url": "mailto:your.email@example.com",
+      "url": "mailto:john.doe@example.com",
       "icon": "email"
     }
   ]
